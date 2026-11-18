@@ -5,9 +5,9 @@ This is a static website. It needs no server code and no database.
 
 FOLDER CONTENTS
   index.html     The whole site (all pages, styles, scripts, product data)
-  thumbs.json    Thumbnail images for listing pages
-  packs/*.json   Full-size product photos, one file per product family
-  hero-*.jpg     Home page slideshow images
+  img/t/*.webp   Thumbnail photos (listing pages)
+  img/f/*.webp   Full-size product photos (galleries)
+  hero-*.webp    Home page slideshow images
 
 HOW TO DEPLOY (any one of these)
   Netlify:          drag the unzipped folder onto app.netlify.com/drop, then add the custom domain
@@ -18,7 +18,7 @@ HOW TO DEPLOY (any one of these)
 Then point the domain's DNS to the host, as the host's instructions describe.
 
 NOTES
-- Upload the folder exactly as it is. index.html loads thumbs.json and packs/ by relative path.
+- Upload the folder exactly as it is. index.html loads img/ and hero images by relative path.
 - Opening index.html straight from disk (file://) will NOT load the photos.
   Preview it through a web server or on the host.
 - Navigation uses URL hashes (#products, #p-pivot, #contact), so no rewrite rules are needed.
